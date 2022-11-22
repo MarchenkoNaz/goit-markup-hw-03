@@ -23,6 +23,7 @@
   --button-text-color: #212121;
   --font-text-color: #000000;
 
+  --card-gap: 30px;
   --primary-font-size: 14px;
   --primary-letter-spacing: 0.03em;
   --secondary-letter-spacing: 0.06em;
@@ -213,15 +214,13 @@ body {
 /* #section benefits */
 .list-benefits {
   display: flex;
+  flex-wrap: wrap;
+  margin-left: calc(-1 * var(--card-gap));
 }
 
-.list-benefits .list-item {
-  width: 270px;
-  margin-left: 30px;
-}
-
-.list-benefits .list-item:first-child {
-  margin-left: 0;
+.list-benefits > .list-item {
+  flex-basis: calc(100% / 4 - var(--card-gap));
+  margin-left: var(--card-gap);
 }
 
 .benefits-title {
@@ -241,9 +240,16 @@ body {
 
 .list-services {
   display: flex;
+  flex-wrap: wrap;
+  margin-left: calc(-1 * var(--card-gap));
 }
-.list-services .list-item + .list-item {
-  margin-left: 30px;
+img {
+  display: block;
+  max-width: 100%;
+}
+.list-services .list-item {
+  flex-basis: calc(100% / 3 - var(--card-gap));
+  margin-left: var(--card-gap);
 }
 
 .section-title {
@@ -262,20 +268,16 @@ body {
 
 .list-card {
   display: flex;
+  flex-wrap: wrap;
+  margin-left: calc(-1 * var(--card-gap));
 }
 
 .item-card {
-  margin-left: 30px;
+  flex-basis: calc(100% / 4 - var(--card-gap));
+  margin-left: var(--card-gap);
   display: block;
-  width: 270px;
-  background-color: var(--secondary-text-color);
-}
-.item-card:first-child {
-  margin-left: 0;
-}
 
-img {
-  display: block;
+  background-color: var(--secondary-text-color);
 }
 
 .card-text {
@@ -383,18 +385,17 @@ img {
 .cards {
   display: flex;
   flex-wrap: wrap;
+  margin-left: calc(-1 * var(--card-gap));
+  margin-bottom: calc(-1 * var(--card-gap));
 }
 
 .cards-item {
-  width: 370px;
+  flex-basis: calc(100% / 3 - var(--card-gap));
   border-bottom: 1px solid var(--border-color);
-  margin-bottom: 30px;
-  margin-right: 30px;
+  margin-bottom: var(--card-gap);
+  margin-left: var(--card-gap);
 }
 
-.cards .cards-item:nth-child(3n) {
-  margin-right: 0;
-}
 .cards-link {
   text-decoration: none;
   color: var(--primary-text-color);
