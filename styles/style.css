@@ -44,7 +44,8 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+p {
   margin: 0;
   padding: 0;
 }
@@ -142,6 +143,7 @@ body {
 }
 .site-link {
   text-decoration: none;
+  color: var(--title-text-color);
 }
 
 .site-nav .site-link:hover,
@@ -162,7 +164,6 @@ body {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
-  margin-left: 50px;
   text-decoration: none;
   color: var(--primary-text-color);
 }
@@ -170,6 +171,9 @@ body {
 .contacts-nav .contactlink:hover,
 .contacts-nav .contactlink:focus {
   color: var(--hover-focus-color);
+}
+.contacts-nav > .list-item + .list-item {
+  margin-left: 50px;
 }
 
 /* #hero */
@@ -224,6 +228,7 @@ body {
 }
 
 .benefits-title {
+  margin-bottom: 10px;
   font-weight: 700;
   font-size: var(--primary-font-size);
   line-height: 1.14;
@@ -237,6 +242,9 @@ body {
 }
 
 /* #services section */
+.services {
+  padding-top: 0;
+}
 
 .list-services {
   display: flex;
@@ -281,8 +289,8 @@ img {
 }
 
 .card-text {
-  margin-top: 30px;
-  margin-bottom: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   text-align: center;
 }
 
@@ -342,6 +350,10 @@ img {
   color: var(--hover-focus-color);
 }
 
+.address-contacts {
+  margin-bottom: -9px;
+}
+
 .address-contacts .list-item {
   margin-bottom: 9px;
 }
@@ -349,6 +361,19 @@ img {
 /* !PORTFOLIO.HTML */
 
 /* #main */
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
 .filters {
   display: flex;
   justify-content: center;
@@ -391,7 +416,6 @@ img {
 
 .cards-item {
   flex-basis: calc(100% / 3 - var(--card-gap));
-  border-bottom: 1px solid var(--border-color);
   margin-bottom: var(--card-gap);
   margin-left: var(--card-gap);
 }
@@ -400,22 +424,27 @@ img {
   text-decoration: none;
   color: var(--primary-text-color);
 }
+
+.card-description {
+  padding-top: 20px;
+  padding-bottom: 24px;
+  padding-left: 24px;
+  padding-right: 24px;
+  border-bottom: 1px solid var(--border-color);
+  border-right: 1px solid var(--border-color);
+  border-left: 1px solid var(--border-color);
+}
+
 .cards-title {
   margin-bottom: 4px;
-  margin-top: 20px;
-  margin-left: 24px;
-  margin-right: 24px;
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: var(--secondary-letter-spacing);
 }
-.cards-description {
+.cards-text {
   line-height: 1.88;
-  margin-left: 24px;
-  margin-right: 24px;
-  margin-bottom: 20px;
 }
 
 address {
