@@ -5,13 +5,13 @@
 	<meta charset="UTF-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<link rel="stylesheet"
-		href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" />
 	<link rel="preconnect" href="https://fonts.googleapis.com" />
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 	<link
 		href="https://fonts.googleapis.com/css2?family=Raleway:wght@700;900&family=Roboto:wght@400;500;700;900&display=swap"
 		rel="stylesheet" />
+	<link rel="stylesheet"
+		href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" />
 	<link rel="stylesheet" href="./styles/style.css" />
 	<title>Portfolio</title>
 </head>
@@ -20,141 +20,27 @@
 	<!--
 		! HEADER
 	-->
-	<header class="portfolio-header">
-
-		<!-- 
+	<header class="header">
+		<div class="container flex-container">
+			<!-- 
 	#navigation
 -->
-		<nav class="navigation">
-			<a class="logo" href="/"><span class="logo-span">Web</span>Studio</a>
-			<!-- 
+			<nav class="navigation">
+				<a class="logo" href="/"><span class="logo-span">Web</span>Studio</a>
+				<!-- 
 	#list of navigation
+ -->
+				<ul class="site-nav lists">
+					<li class="list-item"><a class="site-link " href="./index.html">Студія</a></li>
+					<li class="list-item"><a class="site-link common " href="./portfolio.html">Портфоліо</a></li>
+					<li class="list-item"><a class="site-link" href="">Контакти</a></li>
+				</ul>
+			</nav>
+
+			<!-- 
+	#contacts 
 -->
-			<ul class="site-nav">
-				<li><a class="site-link" href="./index.html">Студія</a></li>
-				<li><a class="site-link common" href="./portfolio.html">Портфоліо</a></li>
-				<li><a class="site-link" href="#">Контакти</a></li>
-			</ul>
-		</nav>
-
-		<!-- 
-	#contacts
--->
-		<ul class="contacts-nav">
-			<li>
-				<a class="contactlink" href="mailto:info@devstudio.com">info@devstudio.com</a>
-			</li>
-			<li>
-				<a class="contactlink" href="tel:+380961111111 ">+38 096 111 11 11</a>
-			</li>
-		</ul>
-	</header>
-	<!-- 
-	 ! MAIN
--->
-
-	<main>
-		<section class="section">
-			<h1>Перелік робіт</h1>
-			<!-- #button navigation -->
-			<ul class="filters">
-				<li>
-					<button class="filter-button" type="button">Усі</button>
-				</li>
-				<li>
-					<button class="filter-button" type="button">Веб-сайти</button>
-				</li>
-				<li>
-					<button class="filter-button" type="button">Додатки</button>
-				</li>
-				<li>
-					<button class="filter-button" type="button">Дизайн</button>
-				</li>
-				<li>
-					<button class="filter-button" type="button">Маркетинг</button>
-				</li>
-			</ul>
-
-			<!-- #cards -->
-
-			<ul class="cards">
-				<li class="cards-item">
-					<a class="cards-link" href="#">
-						<img src="./images/technocrack.jpg" alt="Фото сайту" width="370" />
-						<h2 class="cards-title">Технокряк</h2>
-						<p class="cards-description">Веб-сайт</p>
-					</a>
-				</li>
-				<li class="cards-item">
-					<a class="cards-link" href="#">
-						<img src="./images/new_orlean_vs_golden_star.jpg" alt="Постер" width="370" />
-						<h2 class="cards-title">Постер New Orlean vs Golden Star</h2>
-						<p class="cards-description">Дизайн</p>
-					</a>
-				</li>
-				<li class="cards-item">
-					<a class="cards-link" href="#">
-						<img src="./images/seafood.jpg" alt="Додаток" width="370" />
-						<h2 class="cards-title">Ресторан Seafood</h2>
-						<p class="cards-description">Додаток</p>
-					</a>
-				</li>
-				<li class="cards-item">
-					<a class="cards-link" href="#">
-						<img src="./images/prime.jpg" alt="Навушники" width="370" />
-						<h2 class="cards-title">Проєкт Prime</h2>
-						<p class="cards-description">Маркетинг</p>
-					</a>
-				</li>
-				<li class="cards-item">
-					<a class="cards-link" href="#">
-						<img src="./images/boxes.jpg" alt="Дві коробки" width="370" />
-						<h2 class="cards-title">Проєкт Boxes</h2>
-						<p class="cards-description">Додаток</p>
-					</a>
-				</li>
-				<li class="cards-item">
-					<a class="cards-link" href="#">
-						<img src="./images/inspiration_has_no_borders.jpg" alt="Веб-сайт" width="370" />
-						<h2 class="cards-title">Inspiration has no Borders</h2>
-						<p class="cards-description">Веб-сайт</p>
-					</a>
-				</li>
-				<li class="cards-item">
-					<a class="cards-link" href="#">
-						<img src="./images/limited_edition.jpg" alt="Книга" width="370" />
-						<h2 class="cards-title">Видання Limited Edition</h2>
-						<p class="cards-description">Дизайн</p>
-					</a>
-				</li>
-				<li class="cards-item">
-					<a class="cards-link" href="#">
-						<img src="./images/lab.jpg" alt="Бирка" width="370" />
-						<h2 class="cards-title">Проєкт LAB</h2>
-						<p class="cards-description">Маркетинг</p>
-					</a>
-				</li>
-				<li class="cards-item">
-					<a class="cards-link" href="#">
-						<img src="./images/growing_business.jpg" alt="Додаток" width="370" />
-						<h2 class="cards-title">Growing Business</h2>
-						<p class="cards-description">Додаток</p>
-					</a>
-				</li>
-			</ul>
-		</section>
-	</main>
-	<!--
-			! FOOTER
-		-->
-	<footer class="footer">
-		<a class="logo" href="./index.html"><span class="logo-span">Web</span>Studio</a>
-		<address>
-			<ul class="address-contacts">
-				<li>
-					<a class="maplink" href="https://goo.gl/maps/gcyHWEu6hnRkyXLD7" target="_blank">м. Київ, пр-т Лесі Українки,
-						26</a>
-				</li>
+			<ul class="contacts-nav lists">
 				<li>
 					<a class="contactlink" href="mailto:info@devstudio.com">info@devstudio.com</a>
 				</li>
@@ -162,7 +48,131 @@
 					<a class="contactlink" href="tel:+380961111111 ">+38 096 111 11 11</a>
 				</li>
 			</ul>
-		</address>
+		</div>
+	</header>
+	<!-- 
+	 ! MAIN
+-->
+
+	<main>
+		<div class="container">
+
+			<section class="section">
+				<h1>Перелік робіт</h1>
+				<!-- #button navigation -->
+				<ul class="filters lists">
+					<li class="list-item">
+						<button class="filter-button" type="button">Усі</button>
+					</li>
+					<li class="list-item">
+						<button class="filter-button" type="button">Веб-сайти</button>
+					</li>
+					<li class="list-item">
+						<button class="filter-button" type="button">Додатки</button>
+					</li>
+					<li class="list-item">
+						<button class="filter-button" type="button">Дизайн</button>
+					</li>
+					<li class="list-item">
+						<button class="filter-button" type="button">Маркетинг</button>
+					</li>
+				</ul>
+
+				<!-- #cards -->
+
+				<ul class="cards lists">
+					<li class="cards-item">
+						<a class="cards-link" href="#">
+							<img src="./images/technocrack.jpg" alt="Фото сайту" width="370" />
+							<h2 class="cards-title">Технокряк</h2>
+							<p class="cards-description">Веб-сайт</p>
+						</a>
+					</li>
+					<li class="cards-item">
+						<a class="cards-link" href="#">
+							<img src="./images/new_orlean_vs_golden_star.jpg" alt="Постер" width="370" />
+							<h2 class="cards-title">Постер New Orlean vs Golden Star</h2>
+							<p class="cards-description">Дизайн</p>
+						</a>
+					</li>
+					<li class="cards-item">
+						<a class="cards-link" href="#">
+							<img src="./images/seafood.jpg" alt="Додаток" width="370" />
+							<h2 class="cards-title">Ресторан Seafood</h2>
+							<p class="cards-description">Додаток</p>
+						</a>
+					</li>
+					<li class="cards-item">
+						<a class="cards-link" href="#">
+							<img src="./images/prime.jpg" alt="Навушники" width="370" />
+							<h2 class="cards-title">Проєкт Prime</h2>
+							<p class="cards-description">Маркетинг</p>
+						</a>
+					</li>
+					<li class="cards-item">
+						<a class="cards-link" href="#">
+							<img src="./images/boxes.jpg" alt="Дві коробки" width="370" />
+							<h2 class="cards-title">Проєкт Boxes</h2>
+							<p class="cards-description">Додаток</p>
+						</a>
+					</li>
+					<li class="cards-item">
+						<a class="cards-link" href="#">
+							<img src="./images/inspiration_has_no_borders.jpg" alt="Веб-сайт" width="370" />
+							<h2 class="cards-title">Inspiration has no Borders</h2>
+							<p class="cards-description">Веб-сайт</p>
+						</a>
+					</li>
+					<li class="cards-item">
+						<a class="cards-link" href="#">
+							<img src="./images/limited_edition.jpg" alt="Книга" width="370" />
+							<h2 class="cards-title">Видання Limited Edition</h2>
+							<p class="cards-description">Дизайн</p>
+						</a>
+					</li>
+					<li class="cards-item">
+						<a class="cards-link" href="#">
+							<img src="./images/lab.jpg" alt="Бирка" width="370" />
+							<h2 class="cards-title">Проєкт LAB</h2>
+							<p class="cards-description">Маркетинг</p>
+						</a>
+					</li>
+					<li class="cards-item">
+						<a class="cards-link" href="#">
+							<img src="./images/growing_business.jpg" alt="Додаток" width="370" />
+							<h2 class="cards-title">Growing Business</h2>
+							<p class="cards-description">Додаток</p>
+						</a>
+					</li>
+				</ul>
+			</section>
+		</div>
+	</main>
+
+	<!--
+		! FOOTER
+	-->
+	<!-- #footer -->
+	<footer class="footer">
+		<div class="container">
+			<a class="logo" href="/"><span class="logo-span">Web</span>Studio</a>
+			<!-- #address -->
+			<address>
+				<ul class="address-contacts lists">
+					<li class="list-item">
+						<a class="maplink" href="https://goo.gl/maps/gcyHWEu6hnRkyXLD7" target="_blank">м. Київ, пр-т Лесі
+							Українки,
+							26</a>
+					</li>
+					<li class="list-item">
+						<a class="contactlink" href="mailto:info@devstudio.com">info@devstudio.com</a>
+					</li>
+					<li class="list-item">
+						<a class="contactlink" href="tel:+380961111111 ">+38 096 111 11 11</a>
+					</li>
+				</ul>
+			</address>
+		</div>
 	</footer>
 </body>
 
