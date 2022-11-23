@@ -295,6 +295,7 @@ img {
 }
 
 .list-card .card-title {
+  font-size: 16px;
   margin-bottom: 10px;
   font-weight: 500;
   line-height: 1.19;
@@ -425,7 +426,7 @@ img {
   color: var(--primary-text-color);
 }
 
-.card-description {
+.cards-link > .card-description {
   padding-top: 20px;
   padding-bottom: 24px;
   padding-left: 24px;
